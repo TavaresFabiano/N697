@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildes": [
+    {
+    "src": "src/server.ts",
+    "use": "vercel/node ^20"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "src/app/page.tsx"
+    }
+  ]
+}

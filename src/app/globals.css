@@ -1,33 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: x-large;
+  font-synthesis-position: center;
+  font-style:initial;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+header {
+  border: 30%;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-inline: 10%;
+  padding-top: 5%;
+  height: 400px;
+  width: 70%;
+  background-color: rgb(237, 241, 241);
+  font-display: center;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("images/todos.jpg");
+  background-size: 120% 120%;
+  background-repeat: no-repeat, repeat-x;
+  background-position: 50% 100%; 
+  @media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
   }
+
 }
