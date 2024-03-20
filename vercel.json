@@ -3,7 +3,7 @@
   "buildes": [
     {
     "src": "src/server.ts",
-    "use": "vercel/node"
+    "use": "vercel/node 20.x"
     }
   ],
   "routes": [
